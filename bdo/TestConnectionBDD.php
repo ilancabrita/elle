@@ -1,5 +1,9 @@
 <?php
 
+//use PDO;
+//use Singleton;
+
+require_once 'Singleton.php';
 // Connection
 try 
 {
@@ -48,13 +52,13 @@ $cmd->bindValue(":id", 4);
 $cmd->execute();
 $resultat = $cmd->fetch(PDO::FETCH_ASSOC);
 
-// echo "<pre>";
-// print_r($resultat);
-// echo "</pre>";
+echo "<pre>";
+print_r($resultat);
+echo "</pre>";
 
-foreach ($resultat as $key => $value)
-{
-    echo $key.": ".$value."<br>";
-}
+// foreach ($resultat as $key => $value)
+// {
+//     echo $key.": ".$value."<br>";
+// }
 
 ?>

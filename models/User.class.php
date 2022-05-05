@@ -1,6 +1,6 @@
 <?php
 
-class Connection
+class User
 {
     private $id;
     private $email;
