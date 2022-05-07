@@ -67,14 +67,19 @@ class ConnectionBDO extends Singleton
         }
     }
 
-/**
- * TODO:
- * 1 criar un metodo inserir
- * 2 criar un metodo update
- * 3 criar un metodo delete
- * 4 criar un metodo select all
- * 5 criar un metodo select by id
- */
+    public function test()
+    {
+        echo "fonctionne";
+    }
+
+    /**
+     * TODO:
+     * 1 criar un metodo inserir
+     * 2 criar un metodo update
+     * 3 criar un metodo delete
+     * 4 criar un metodo select all
+     * 5 criar un metodo select by id
+     */
 }
 
 ?>
