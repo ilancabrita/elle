@@ -18,7 +18,7 @@ class Clients extends ConnectionBDO
             $res->bindParam(5, $data['telephone'], PDO::PARAM_STR);
             return $res->execute();
         }catch (Exception $e){
-           die("Error User->clients() " . $e->getMessage());
+           die("Error Clients->clients() " . $e->getMessage());
         }
     }
 
@@ -34,7 +34,7 @@ class Clients extends ConnectionBDO
             $res->bindParam(6, $data['idClients'], PDO::PARAM_INT);
             return $res->execute();
         }catch (Exception $e){
-            die("Error User->clients() " . $e->getMessage());
+            die("Error Clients->clients() " . $e->getMessage());
         }
     }
 
@@ -45,7 +45,7 @@ class Clients extends ConnectionBDO
             $res->bindParam(1, $data['idClients'], PDO::PARAM_INT);
             return $res->execute();
         }catch (Exception $e){
-            die("Error User->clients() " . $e->getMessage());
+            die("Error Clients->clients() " . $e->getMessage());
         }
     }
 
@@ -56,7 +56,7 @@ class Clients extends ConnectionBDO
             $res->execute();
             return $res->fetchAll();
         }catch (Exception $e){
-            die("Error User->clients() " . $e->getMessage());
+            die("Error Clients->clients() " . $e->getMessage());
         }
     }
 
@@ -68,7 +68,7 @@ class Clients extends ConnectionBDO
             $res->execute();
             return $res->fetch();
         }catch (Exception $e){
-            die("Error User->clients() " . $e->getMessage());
+            die("Error Clients->clients() " . $e->getMessage());
         }
     }
 

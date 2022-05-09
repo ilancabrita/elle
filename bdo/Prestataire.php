@@ -15,7 +15,7 @@ class Prastataire extends ConnectionBDO
             $res->bindParam(2, $data['horaireDeTravail'], PDO::PARAM_STR);
             return $res->execute();
         }catch (Exception $e){
-           die("Error User->prestataire() " . $e->getMessage());
+           die("Error Prestataire->prestataire() " . $e->getMessage());
         }
     }
 
@@ -28,7 +28,7 @@ class Prastataire extends ConnectionBDO
             $res->bindParam(3, $data['idPrestataire'], PDO::PARAM_INT);
             return $res->execute();
         }catch (Exception $e){
-            die("Error User->prestataire() " . $e->getMessage());
+            die("Error Prestataire->prestataire() " . $e->getMessage());
         }
     }
 
@@ -39,7 +39,7 @@ class Prastataire extends ConnectionBDO
             $res->bindParam(1, $data['idPrestataire'], PDO::PARAM_INT);
             return $res->execute();
         }catch (Exception $e){
-            die("Error User->prestataire() " . $e->getMessage());
+            die("Error Prestataire->prestataire() " . $e->getMessage());
         }
     }
 
@@ -50,7 +50,7 @@ class Prastataire extends ConnectionBDO
             $res->execute();
             return $res->fetchAll();
         }catch (Exception $e){
-            die("Error User->prestataire() " . $e->getMessage());
+            die("Error Prestataire->prestataire() " . $e->getMessage());
         }
     }
 
@@ -62,7 +62,7 @@ class Prastataire extends ConnectionBDO
             $res->execute();
             return $res->fetch();
         }catch (Exception $e){
-            die("Error User->prestataire() " . $e->getMessage());
+            die("Error Prestataire->prestataire() " . $e->getMessage());
         }
     }
 
