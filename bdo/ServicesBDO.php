@@ -1,7 +1,7 @@
 <?php
 // use Service;
 
-class Services extends Singleton
+class ServicesBDO extends Singleton
 {
     public function __construct() {
         

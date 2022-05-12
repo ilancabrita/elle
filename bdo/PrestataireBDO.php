@@ -1,7 +1,7 @@
 <?php
 // use Pretataire;
 
-class Prastataire extends Singleton
+class PrastataireBDO extends Singleton
 {
     public function __construct() {
         

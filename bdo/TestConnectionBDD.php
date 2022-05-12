@@ -2,7 +2,7 @@
 
 //use PDO;
 //use ConnectionBDO;
-class TestConnectionBDD extends ConnectionBDO
+class TestConnectionBDD extends UserBDO
 {
 
     private function __construct() {

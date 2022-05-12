@@ -1,7 +1,7 @@
 <?php
 // use User;
 
-class ConnectionBDO extends Singleton
+class UserBDO extends Singleton
 {
     public function __construct() {
         

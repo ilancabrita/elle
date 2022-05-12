@@ -1,7 +1,7 @@
 <?php
 // use Depense;
 
-class Depense extends Singleton
+class DepenseBDO extends Singleton
 {
     public function __construct() {
         

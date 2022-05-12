@@ -1,7 +1,7 @@
 <?php
 // use TypeDePaiement;
 
-class TypeDePaiement extends Singleton
+class TypeDePaiementBDO extends Singleton
 {
     public function __construct() {
         

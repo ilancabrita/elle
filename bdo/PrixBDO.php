@@ -1,7 +1,7 @@
 <?php
 // use Prix;
 
-class Prix extends Singleton
+class PrixBDO extends Singleton
 {
     public function __construct() {
         

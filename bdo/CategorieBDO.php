@@ -1,7 +1,7 @@
 <?php
 // use Categories;
 
-class Categories extends Singleton
+class CategoriesBDO extends Singleton
 {
     public function __construct() {
         
