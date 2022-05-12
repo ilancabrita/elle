@@ -1,9 +1,9 @@
 <?php
 // use Service;
 
-class Services extends Categories
+class Services extends Singleton
 {
-    private function __construct() {
+    public function __construct() {
         
     }
 

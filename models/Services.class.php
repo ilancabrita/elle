@@ -1,24 +1,32 @@
 <?php
-
-class Services extends Categories
+require_once 'Categories.class.php';
+class Services
 {
     private $idService;
     private $service;
     private $commentaire;
+    private $categories;
 
-    public function __construct($idService, $service, $commentaire)
+    public function __construct()
+    {
+        
+    }
+    
+    public function __construct($idService, $service, $commentaire, $categories)
     {
         echo "Instanciation.......";
         $this->setIdService($idService);
         $this->setService($service);
         $this->setCommentaire($commentaire);
+        $this->setCategories($categories);
     }
 
-    public function __construct($service, $commentaire)
+    public function __construct($service, $commentaire, $categories)
     {
         echo "Instanciation.......";
         $this->setService($service);
         $this->setCommentaire($commentaire);
+        $this->setCategories($categories);
     }
 
     public function setIdService($newIdService)
@@ -64,5 +72,20 @@ class Services extends Categories
     public function getCommentaire()
     {
         return $this->commentaire;
+    }
+
+    public function setCategories ($newCategories)
+    {
+        if (is_string($newCategories)) {
+            $this->categories = $newCategories;
+        } 
+        else {
+            trigger_error(E_USER_ERROR);
+        }
+    }
+
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }

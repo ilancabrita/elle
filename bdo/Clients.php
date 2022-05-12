@@ -1,9 +1,9 @@
 <?php
 // use Clients;
 
-class Clients extends ConnectionBDO
+class Clients extends Singleton
 {
-    private function __construct() {
+    public function __construct() {
         
     }
 

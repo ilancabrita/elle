@@ -1,9 +1,9 @@
 <?php
 // use Prix;
 
-class Prix extends Services
+class Prix extends Singleton
 {
-    private function __construct() {
+    public function __construct() {
         
     }
 

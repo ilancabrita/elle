@@ -1,9 +1,9 @@
 <?php
 // use Pretataire;
 
-class Prastataire extends ConnectionBDO
+class Prastataire extends Singleton
 {
-    private function __construct() {
+    public function __construct() {
         
     }
 
