@@ -7,12 +7,12 @@ class Services
     private $commentaire;
     private $categories;
 
-    public function __construct()
+    function __construct()
     {
         
     }
     
-    public function __construct($idService, $service, $commentaire, $categories)
+    function __construct($idService, $service, $commentaire, $categories)
     {
         echo "Instanciation.......";
         $this->setIdService($idService);
@@ -21,7 +21,7 @@ class Services
         $this->setCategories($categories);
     }
 
-    public function __construct($service, $commentaire, $categories)
+    function __construct($service, $commentaire, $categories)
     {
         echo "Instanciation.......";
         $this->setService($service);

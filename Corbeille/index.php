@@ -1,7 +1,11 @@
-<?php
-
-$con = Singleton::getInstanceFile('./configdb.ini');
- 
-echo (is_a($con, PDO::class))?'Instanciado com êxito' :'Não deu certo!';
-
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBO - Hello, World!</title>
+</head>
+<body>
+        <h1><?php echo 'Hello, World!'; ?></h1>
+</body>
+</html>
