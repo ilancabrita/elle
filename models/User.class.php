@@ -3,31 +3,25 @@
 class User
 {
     private $id;
+    private $premon;
     private $email;
     private $identifiant;
     private $motDePasse;
 
-    public function __construct($id, $email, $identifiant, $motDePasse)
+    public function __construct($id, $premon, $email, $identifiant, $motDePasse)
     {
         echo "Instanciation.......";
         $this->setId($id);
+        $this->setPrenom($premon);
         $this->setEmail($email);
         $this->setIdentifiant($identifiant);
         $this->setMotDePasse($motDePasse);
     }
 
-    public function __construct($email, $identifiant, $motDePasse)
-    {
-        echo "Instanciation.......";
-        $this->setEmail($email);
-        $this->setIdentifiant($identifiant);
-        $this->setMotDePasse($motDePasse);
-    }
-
-    public function setId($newid)
+    public function setId($newId)
     {   
-        if (is_string($newid)) {
-            $this->id = $newrid;
+        if (is_string($newId)) {
+            $this->id = $newId;
         } 
         else {
             trigger_error("Ce n'est pas une chaine de caractère ou elle contient plus de 20 caractères", E_USER_ERROR);
@@ -39,19 +33,19 @@ class User
         return $this->id;
     }
 
-    public function setPrenom($newPrenom)
+    public function setEmail($newEmail)
     {   
-        if (is_string($newPrenom) && iconv_strlen($newPrenom) <= 20) {
-            $this->prenom = $newPrenom;
+        if (is_string($newEmail) && iconv_strlen($newEmail) <= 20) {
+            $this->email = $newEmail;
         } 
         else {
             trigger_error("Ce n'est pas une chaine de caractère ou elle contient plus de 20 caractères", E_USER_ERROR);
         }
     }
 
-    public function getPrenom()
+    public function getEmail()
     {
-        return $this->prenom;
+        return $this->email;
     }
 
     public function setIdentifiant($newIdentifiant)
@@ -98,21 +92,8 @@ class User
     {
         return $this->prenom;
     }
-
-    public function setEmail($newEmail)
-    {   
-        if (is_string($newEmail)) {
-            $this->email = $newEmail;
-        } 
-        else {
-            trigger_error("Ce n'est pas une chaine de caractère ou elle contient plus de 20 caractères", E_USER_ERROR);
-        }
-    }
-
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
 }
 
+$user = new User(0, 'Ilan', 'ilan335511@gmail.com', 'IlanC', '1234');
+echo "<br>";
+echo $user->getEmail();

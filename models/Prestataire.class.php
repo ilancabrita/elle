@@ -15,17 +15,10 @@ class Prestataire
         $this->setHoraireDeTravail($horaireDeTravail);
     }
 
-    public function __construct($jourDeTravail, $horaireDeTravail)
-    {
-        echo "Instanciation.......";
-        $this->setJourDeTravail($jourDeTravail);
-        $this->sethoraireDeTravail($horaireDeTravail);
-    }
-
     public function setIdPrestataire($newIdPrestataire)
     {   
         if (is_string($newIdPrestataire)) {
-            $this->idPprestataire = $newrIdPrestataire;
+            $this->idPprestataire = $newIdPrestataire;
         } 
         else {
             trigger_error("Ce n'est pas une chaine de caractère ou elle contient plus de 20 caractères", E_USER_ERROR);
@@ -37,7 +30,7 @@ class Prestataire
         return $this->idPrestataire;
     }
 
-    public function setJouDeTravail($newJourDeTravail)
+    public function setJourDeTravail($newJourDeTravail)
     {   
         if (is_string($newJourDeTravail)) {
             $this->jourDeTravail = $newJourDeTravail;
@@ -67,3 +60,7 @@ class Prestataire
         return $this->horaireDeTravail;
     }
 }
+
+$pretataire = new Prestataire(0, 'lundi', 'de 9h à 19h');
+echo "<br>";
+echo $prestataire->getJourDeTravail();

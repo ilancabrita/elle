@@ -22,17 +22,6 @@ class Depense
         $this->setTypeDePaiement($typeDePaiement);
     }
 
-    public function __construct($depense, $date, $description, $lieux, $valeur)
-    {
-        echo "Instanciation.......";
-        $this->setdepense($depense);
-        $this->setdate($date);
-        $this->setdescription($description);
-        $this->setlieux($lieux);
-        $this->setvaleur($valeur);
-        $this->setTypeDePaiement($typeDePaiement);
-    }
-
     public function setIdDepense($newIdDepense)
     {   
         if (is_string($newIdDepense)) {
@@ -139,3 +128,7 @@ class Depense
         return $this->typeDePaiement;
     }
 }
+
+$depense = new Depense(0, 'eau', '22.05.13', 'sel', 'itajai', 40, 'CB');
+echo "<br>";
+echo $categorie->getDepense();

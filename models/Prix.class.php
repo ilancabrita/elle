@@ -14,13 +14,6 @@ class Prix extends Services
         $this->setCommentaire($commentaire);
     }
 
-    public function __construct($prix, $commentaire)
-    {
-        echo "Instanciation.......";
-        $this->setPrix($prix);
-        $this->setCommentaire($commentaire);
-    }
-
     public function setIdPrix($newIdPrix)
     {   
         if (is_string($newIdPrix)) {
@@ -66,3 +59,7 @@ class Prix extends Services
         return $this->commentaire;
     }
 }
+
+$prix = new Prix(0, 'lundi', 'de 9h à 19h');
+echo "<br>";
+echo $prix->getPrix();

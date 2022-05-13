@@ -14,17 +14,10 @@ class Categories
         $this->setCommentaire($commentaire);
     }
 
-    public function __construct($categorie, $commentaire)
-    {
-        echo "Instanciation.......";
-        $this->setCategorie($categorie);
-        $this->setCommentaire($commentaire);
-    }
-
     public function setId($newId)
     {   
         if (is_string($newId)) {
-            $this->id = $newrId;
+            $this->id = $newId;
         } 
         else {
             trigger_error(E_USER_ERROR);
@@ -66,3 +59,7 @@ class Categories
         return $this->commentaire;
     }
 }
+
+$categorie = new Categories(0, 'test', 'blabla');
+echo "<br>";
+echo $categorie->getCategorie();

@@ -1,6 +1,6 @@
 <?php
 require_once 'User.class.php';
-class Clients extends Connection
+class Clients extends User
 {
     private $idClient;
     private $adresse;
@@ -13,16 +13,6 @@ class Clients extends Connection
     {
         echo "Instanciation.......";
         $this->setIdClient($idClient);
-        $this->setAdresse($adresse);
-        $this->setCodePostale($codePostale);
-        $this->setVille($ville);
-        $this->setPays($pays);
-        $this->setTelephone($telephone);
-    }
-
-    public function __construct($adresse, $codePostale, $ville, $pays, $telephone)
-    {
-        echo "Instanciation.......";
         $this->setAdresse($adresse);
         $this->setCodePostale($codePostale);
         $this->setVille($ville);
@@ -121,3 +111,7 @@ class Clients extends Connection
         return $this->telephone;
     }
 }
+
+$client = new Clients(0, 'rua enchieta', '93130', 'balneario camburiu', 'bresil', '0782024677');
+echo "<br>";
+echo $client->getVille();

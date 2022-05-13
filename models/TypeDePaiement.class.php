@@ -15,13 +15,6 @@ class TypeDePaiement extends Depense
         $this->setAbreviationTypeDePaiement($abreviationTypeDePaiement);
     }
 
-    public function __construct($nom, $abreviationTypeDePaiement)
-    {
-        echo "Instanciation.......";
-        $this->setNom($nom);
-        $this->setAbreviationTypeDePaiement($abreviationTypeDePaiement);
-    }
-
     public function setIdTypeDePaiement($newIdTypeDePaiement)
     {   
         if (is_string($newIdTypeDePaiement)) {
@@ -67,3 +60,7 @@ class TypeDePaiement extends Depense
         return $this->abreviationTypeDePaiement;
     }
 }
+
+$nom = new TypeDePaiement(0, 'Carte Blue', 'CB');
+echo "<br>";
+echo $typeDePaiement->getNom();

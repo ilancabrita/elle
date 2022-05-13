@@ -7,23 +7,10 @@ class Services
     private $commentaire;
     private $categories;
 
-    function __construct()
-    {
-        
-    }
-    
-    function __construct($idService, $service, $commentaire, $categories)
+    public function __construct($idService, $service, $commentaire, $categories)
     {
         echo "Instanciation.......";
         $this->setIdService($idService);
-        $this->setService($service);
-        $this->setCommentaire($commentaire);
-        $this->setCategories($categories);
-    }
-
-    function __construct($service, $commentaire, $categories)
-    {
-        echo "Instanciation.......";
         $this->setService($service);
         $this->setCommentaire($commentaire);
         $this->setCategories($categories);
@@ -82,10 +69,14 @@ class Services
         else {
             trigger_error(E_USER_ERROR);
         }
-    }
+    } 
 
     public function getCategories()
     {
         return $this->categories;
     }
 }
+
+$services = new Services(0, 'test', 'hahah',);
+echo "<br>";
+echo $categorie->getService();
