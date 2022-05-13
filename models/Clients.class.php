@@ -1,5 +1,5 @@
 <?php
-
+require_once 'User.class.php';
 class Clients extends Connection
 {
     private $idClient;
