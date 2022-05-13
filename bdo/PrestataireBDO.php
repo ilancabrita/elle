@@ -1,6 +1,6 @@
 <?php
 // use Pretataire;
-
+require_once 'Singleton.php';
 class PrastataireBDO extends Singleton
 {
     public function __construct() {

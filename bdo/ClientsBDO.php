@@ -1,6 +1,6 @@
 <?php
 // use Clients;
-
+require_once 'Singleton.php';
 class ClientsBDO extends Singleton
 {
     public function __construct() {

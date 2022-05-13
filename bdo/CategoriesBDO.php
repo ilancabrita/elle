@@ -1,6 +1,6 @@
 <?php
 // use Categories;
-
+require_once 'Singleton.php';
 class CategoriesBDO extends Singleton
 {
     public function __construct() {

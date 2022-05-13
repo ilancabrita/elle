@@ -1,6 +1,6 @@
 <?php
 // use Service;
-
+require_once 'Singleton.php';
 class ServicesBDO extends Singleton
 {
     public function __construct() {

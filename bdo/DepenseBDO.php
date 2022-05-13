@@ -1,6 +1,6 @@
 <?php
 // use Depense;
-
+require_once 'Singleton.php';
 class DepenseBDO extends Singleton
 {
     public function __construct() {

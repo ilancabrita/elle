@@ -1,6 +1,6 @@
 <?php
 // use User;
-
+require_once 'Singleton.php';
 class UserBDO extends Singleton
 {
     public function __construct() {
