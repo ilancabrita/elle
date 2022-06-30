@@ -3,16 +3,16 @@
 class User
 {
     private $id;
-    private $premon;
+    private $prenom;
     private $email;
     private $identifiant;
     private $motDePasse;
 
-    public function __construct($id, $premon, $email, $identifiant, $motDePasse)
+    public function __construct($id, $prenom, $email, $identifiant, $motDePasse)
     {
         echo "Instanciation.......";
         $this->setId($id);
-        $this->setPrenom($premon);
+        $this->setPrenom($prenom);
         $this->setEmail($email);
         $this->setIdentifiant($identifiant);
         $this->setMotDePasse($motDePasse);
@@ -94,6 +94,6 @@ class User
     }
 }
 
-$user = new User(0, 'Ilan', 'ilan335511@gmail.com', 'IlanC', '1234');
-echo "<br>";
-echo $user->getEmail();
+// $user = new User(0, 'Ilan', 'ilan335511@gmail.com', 'IlanC', '1234');
+// echo "<br>";
+// echo $user->getEmail();

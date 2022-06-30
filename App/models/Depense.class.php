@@ -129,6 +129,6 @@ class Depense
     }
 }
 
-$depense = new Depense(0, 'eau', '22.05.13', 'sel', 'itajai', 40, 'CB');
-echo "<br>";
-echo $categorie->getDepense();
+// $depense = new Depense(0, 'eau', '22.05.13', 'sel', 'itajai', 40, 'CB');
+// echo "<br>";
+// echo $categorie->getDepense();

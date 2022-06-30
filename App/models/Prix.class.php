@@ -1,5 +1,5 @@
 <?php
-require_once'Services.class.php';
+// require_once'Services.class.php';
 class Prix extends Services
 {
     private $idPrix;

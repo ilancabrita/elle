@@ -1,6 +1,6 @@
 <?php
-require_once 'Categories.class.php';
-class Services
+// require_once 'Categories.class.php';
+class Services extends Categories
 {
     private $idService;
     private $service;

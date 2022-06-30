@@ -1,6 +1,6 @@
 <?php
-require_once 'User.class.php';
-class Prestataire
+// require_once 'User.class.php';
+class Prestataire extends User
 {
     private $idPrestataire;
     private $jourDeTravail;
@@ -61,6 +61,6 @@ class Prestataire
     }
 }
 
-$pretataire = new Prestataire(0, 'lundi', 'de 9h à 19h');
-echo "<br>";
-echo $prestataire->getJourDeTravail();
+// $pretataire = new Prestataire(0, 'lundi', 'de 9h à 19h');
+// echo "<br>";
+// echo $prestataire->getJourDeTravail();
