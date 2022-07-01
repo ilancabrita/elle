@@ -18,6 +18,41 @@
 
     <div>Extension de cils : La dernière tendances beauté, il s'agit d'une méthode innovantes pour rallonger et épaissir vos propoes cils sur une base semi-permanente.</div>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Prestation</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <?php 
+            while($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
+            ?>
+
+            <tr>
+                <td>
+                    <?php echo 
+                    htmlspecialchars($row['id']);
+                    ?>
+                </td>
+
+                <td>
+                    <?php echo 
+                    htmlspecialchars($row['name']);
+                    ?>
+                </td>
+            </tr>
+            
+            <?php 
+            endwhile;
+            ?>
+
+        </tbody>
+    </table>
+
     <footer>
 
     </footer>
