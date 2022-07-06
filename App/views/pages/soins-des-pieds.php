@@ -23,7 +23,7 @@
     <table>
         <thead>
             <tr>
-                <th>Prestation</th>
+                <th>Service</th>
                 <th>Prix</th>
             </tr>
         </thead>
@@ -37,13 +37,13 @@
             <tr>
                 <td>
                     <?php echo 
-                    htmlspecialchars($row['id']);
+                    htmlspecialchars($row['service']);
                     ?>
                 </td>
 
                 <td>
                     <?php echo 
-                    htmlspecialchars($row['name']);
+                    htmlspecialchars($row['prix']);
                     ?>
                 </td>
             </tr>
