@@ -15,9 +15,9 @@
 
     <img src="" alt="">
 
-    <div>Enfin,des soins et des produits destinés à vous mesdames 100% naturels,authentiques,simples, sincères et raffinés.</div>
+    <div>Enfin, des soins et des produits destinés à vous mesdames 100% naturels, authentiques, simples, sincères et raffinés.</div>
 
-    <div>ELLE EMBELLIT vous propose un large choix de soins haute gamme :soins du visage,soins du corps,manucure,pédicure et pose de cils à cils conçus et réfléchis pour votre bien être.</div>
+    <div>ELLE EMBELLIT vous propose un large choix de soins haute gamme :soins du visage, soins du corps, manucure, pédicure et pose de cils à cils conçus et réfléchis pour votre bien être.</div>
 
     <div>Nous mettons à votre disposition notre expérience par des soins ciblé et indispensable pour votre beauté naturel. </div>
 
